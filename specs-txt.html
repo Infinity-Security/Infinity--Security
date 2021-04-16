@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Infinity Security</title>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<style>
+
+    @font-face {
+        font-family: 'FonteLogo';
+        src: url("projeto-glass-html5/_fonts/bubblegum-sans-regular.otf");
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #0a090996;
+        color: rgba(0,0,0,1);
+
+    }
+
+    div#interface {
+        width: 1.280px  800px;
+        background-color: #f0eef59a;
+        margin: 1em 5px 30px 5px;
+        box-shadow: 5px -9px 3px rgba(0,0,0,.5);
+        padding: auto
+
+    }
+
+
+    P { text-align: justify;
+        text-indent: 40px; }
+    a {
+        color: #606060;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+
+    header#cabecalho img#icone{
+        position: absolute;
+        left: 1148px;
+        top: 40px;
+    }
+
+    header#cabecalho {
+        border-bottom: 1px #606060 solid;
+        height: 150px;
+        background: url("/meu\ sit") no-repeat 0px 80px;
+    }
+    header#cabecalho h1{
+        font-family: 'FonteLogo', sans-serif;
+        font-size: 30pt;
+        color: #606060;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+
+    header#cabecalho h2 {
+        font-family: Arial, sans-serif;
+        color: #888888;
+        font-size: 15pt;
+        padding: 0px;
+        margin-top: -25px;
+        
+    }
+
+    /* Formatação de imagens com legendas*/
+    figure.foto-legenda{
+        position: relative;
+        border: 8px solid white;
+        box-shadow: 1px 1px 4px black;
+    }
+    figure.foto-legenda img {
+        width: 100%;
+        height: 100%;
+    }
+
+    figure.foto-legenda figcaption {
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        background-color: rgba(0, 0, 0, .4);
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: opacity 1s;
+    }
+    figure.foto-legenda:hover figcaption{
+        opacity: 1;
+    }
+    /* Formatação do menu */
+    nav#menu{
+        display: block;
+    }
+
+    nav#menu ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute;
+        top: -20px;
+        right: 20px;
+    }
+    nav#menu li {
+        display: inline-block;
+        background-color: #dddddd;
+        padding: 10px;
+        margin: 2px;
+        transition: background-color 1s;
+    }
+
+    nav#menu li:hover{
+        background-color: #606060;
+    }
+
+    nav#menu h1{
+        display: none;
+    }
+
+    nav#menu a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    nav#menu a:hover{
+        color: #ffffff;
+        text-decoration: underline;
+    }
+    section#corpo {
+        display: block;
+        width: 500px;
+        float: left;
+        border-right: 1px solid #606060;
+        padding-right: 120px;
+    }
+    article#noticia-principal h2 {
+        font-size: 13pt;
+        color: #ffffff;
+        background-color: #606060;
+        padding: 5px 0px 5px 10px;
+        margin: 10px 0px 10px 0px;
+    }
+    article#noticia-principal p{
+        margin-right: 10px;
+        margin-left: 10px;
+
+    }
+    header#cabecalho-artigo h1 {
+        font-family: 'FonteLogo' , sans-serif;
+        font-size: 20pt;
+        color: #606060;
+        margin-bottom: 0px;
+        margin-top: 0px;
+
+    }
+    .direita {
+        text-align: right;
+    }
+    header#cabecalho-artigo h2 {
+        font-size: 13pt;
+        color: #ffffff;
+        background-color: #606060;
+        margin: 0px;
+    }
+    header#cabecalho-artigo h3 {
+        font-size: 12pt;
+        color: #606060;
+    }
+    table#tabelaspec{
+        border: 1px solid #606060;
+        border-spacing: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table#tabelaspec td{
+        border: 1px solid #606060;
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    table#tabelaspec td.ce {
+        color: #ffffff;
+        background: #606060;
+        vertical-align: top;
+        font-weight: bold;
+    }
+    table#tabelaspec td.cd {
+        background-color: #cecece;
+    }
+    table#tabelaspec caption{
+        color: #888888;
+        font-size: 13pt;
+        font-weight: bolder;
+    }
+    table#tabelaspec caption span{
+        display: block;
+        float: right;
+        color: #000000;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    aside#lateral {
+        display: block;
+        width: 680px;
+        float: right;
+        background-color: #ffffff;
+        padding: 10px;
+        box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+
+    }
+    aside#lateral h1 {
+        font-family: 'FonteLogo' , sans-serif;
+        font-size: 20pt;
+        color: #606060;
+        margin-top: 0px;
+
+
+
+    }
+    aside#lateral h2{
+        background-color: #606060;
+        font-size: 13pt;
+        color: #ffffff;
+        padding: 5px;
+    }
+    footer#rodape {
+        clear: both;
+        border-top: 1px solid #606060;
+    }
+    footer#rodape p {
+        text-align: center;
+    }
+    *{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+</style>
+
+</head>
+
+<body>
+<div id="interface">
+
+    <header id="cabecalho">
+        <hgroup>
+            <h1>Infinity Segurity<h1/>
+                <h2>ideal para segurança virtual<h2/>
+        </hgroup>
+
+        <img id="icone" src="meu site/logo.png" width="165"/>
+
+        <SPAN style="position: relative; top:-50px; left: 15px;width: 103px; height: 900px">
+        <img id="icone8" src="/meu site/logo.png" width="165" />
+    </SPAN>
+
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul type="disc">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="specs-txt.html">Serviços</a><link > </li>
+
+            </ul>
+        </nav>
+    </header>
+    <article id="noticia-principal">
+        <h2>O MERCADO</h2>
+        <p>O mercado de segurança da informação está em ebulição. Novas ameaças surgem e companhias têm de se proteger. “Líderes de Segurança e de Gestão de Riscos precisam aprender a trabalhar com as últimas tendências tecnológicas se quiserem definir, alcançar e manter programas eficazes que ofereçam, de forma simultânea, oportunidades de negócios digitais com a gestão de riscos”.</p>
+        
+</article>
+
+<article id="noticia-principal">
+    <h2>Apresentamos na tabela abaixo os Serviços e valores que a Infinity Security oferece.</h2>
+    <center>
+        <img src="meu site/projeto at.png.png"/>
+        </center>
+<p><br><b>Resultados Rápidos e Efetivos</b><br/>
+
+    <br><p>A Infinity Security identifica os ativos mais sensíveis para o seu negócio, coleta e envia os logs e eventos para a plataforma Big Data, que pode estar local ou na Nuvem. Você recebe de volta uma verdadeira inteligência de segurança para priorizar e atuar no que realmente é necessário.Sua empresa passa a contar com monitoramento do ambiente em tempo real, 24×7, que irá alertá-lo sobre qualquer atividade maliciosa ou suspeita. Você ainda terá visibilidade integrada da sua segurança através de um Portal Web unificado, ou Aplicativo próprio para smartphones e tablets.<br/></p>
+
+    <h2>Auditoria de segurança</h2>
+    
+<p>Seus processos, controles e procedimentos estão sendo executados? A política de segurança definida está sendo cumprida? Sua infraestrutura de segurança está bem arquitetada?
+<p>Realizamos uma auditoria de sua segurança de forma planejada, transparente, apresentando um relatório completo com todos os pontos auditados. O Serviço de Auditoria de Segurança de TI da Infinity Security foi desenhado especialmente para avaliar de forma rápida e eficiente os principais riscos de segurança que o negócio enfrenta, considerando a presença e qualidade de controles implantados para mitigar esses riscos.
+<p>Como parte da auditoria, nossa equipe vai entrevistar o seu pessoal-chave, conduzir avaliações de vulnerabilidade através de ferramentas automatizadas, avaliar políticas e testar controles existentes de acordo com as principais normas de segurança internacionais – ISO/IEC-27001 e ISO/IEC-27002.
+    <p><br><b>Ao final da Auditoria você terá:</b><br/></p>
+
+    <p>• Visibilidade do seu grau de exposição externo na Internet
+        <p>• Nível de vulnerabilidade interna
+            <p>• Visibilidade de possíveis ataques em andamento
+                <p>• Atividades suspeitas na rede e tentativas de vazamento de informação
+                    <p>• Maturidade de controles e processos
+Benefícios
+<p>• Aprimore sua estratégia de segurança
+    <p>• Otimize sua operação de segurança
+        <p>• Melhore controles e processos
+            <p>• Reduza o risco ao negócio</p>
+
+            <h2>Faturamento</h2>
+            <p>Empresa Infinity Security implementou um serviço extraordinário para atender as necessidades dos nossos clientes. O mercado de segurança da informação está em ebulição. Novas ameaças surgem e companhias têm de se proteger.<p> “Líderes de Segurança e de Gestão de Riscos precisam aprender a trabalhar com as últimas tendências tecnológicas se quiserem definir, alcançar e manter programas eficazes que ofereçam, de forma simultânea, oportunidades de negócios digitais com a gestão de riscos”.</p>
+            <p>Após implementação da Tecnologia Deception durante 5 anos nosso faturamento progrediu de uma forma excelente, como demonstrado no gráfico abaixo. 
+                Diversos clientes adquiriram nosso serviço após implementar está ferramenta na empresa, oferecendo qualidade e segurança para todos os consumidores de recursos que a empresa proporciona. Portanto, ambas partes se beneficiam.</p>
+</article>
+    <footer id="rodape">
+        <p>              Localização</p>
+        <p>Av. Paulista 1106, Edifício Comercial</p>
+                             <P>São Paulo<p>
+                    <p>CEP: 01310-200   Centro</p>
+        <p>Copyright &copy; 2013 - by Infinity Security <br/>
+            <a href="https://www.instagram.com/infinity_security15/" target="_blank">Instagram</a></p>
+    </footer>
+</div>
+</body>
+</html>
