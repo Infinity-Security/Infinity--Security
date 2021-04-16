@@ -1,44 +1,21 @@
-Nome Do Projeto
-Infity Security
-
-Dodos Da Turma
-Dia da semana: Sexta-Feira
-Período: Noturno
-
-Integrantes
-RA	      Nome Completo	                Curso	  Turma
-319200066	Kaique De Souza Aguiar	      TGTI	   4A
-319100800	Natércio Carvalho Farias	    TGTI	   4A
-319200569	Ewerton Santos	              TGTI	   4A
-319106967	Adebowale Matheus	            TGTI	   4A
-319201248	Guilherme Gomes	              TGTI	   4A
-319202439	Vitor Soares de Sá	          TGTI	   4A
-317102412	Pedro Paulo Duarte Moratto	  TGTI	   4A
-
-Descrição Do Projeto
-
-
-Endereço da Aplicação
-
-
-Outras Observações
-
-
 
 # **Nome do Projeto**
+Infinity Security
 
 ## Dados da Turma
-* Dia da semana: **Quarta-Feira**
+* Dia da semana: **Sexta-Feira**
 * Período: **Noturno**
 
 ## Integrantes
-| RA   | NOME COMPLETO | CURSO | TURMA |
-|------|---------------|-------|-------|
-| 319200066 | Kaique De Souza Aguiar  | TGTI  | 4A   |
-| 321  | ZÉ CARIOCA    | TADS  | 1A    |
-| 159  | Mc DONALDS    | TADS  | 1A    |
-| 785  | ÚLTIMO NOME   | TADS  | 1A    |
-
+| RA        | NOME COMPLETO               | CURSO | TURMA |
+|-----------|-----------------------------|-------|-------|
+| 319200066 | Kaique De Souza Aguiar      | TGTI  | 4A    |
+| 319100800 | Natércio Carvalho Farias    | TGTI  | 4A    |
+| 319200569 | Ewerton Santos              | TGTI  | 4A    |
+| 319201248 | Adebowale Matheus           | TGTI  | 4A    |
+| 319201248 | Guilherme Gomes             | TGTI  | 4A    |
+| 319202439 | Vitor Soares de Sá          | TGTI  | 4A    |
+| 319201248 | Pedro Paulo Duarte Moratto  | TGTI  | 4A    |
 ## Descrição do Projeto
 Descrever brevemente o objetivo do projeto e como será alcançado. Por exemplo, citar as metodologias utilizadas, linguagens de programação, etc.
 
