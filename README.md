@@ -17,7 +17,7 @@ Infinity Security
 | 319202439 | Vitor Soares de Sá          | TGTI  | 4A    |
 | 319201248 | Pedro Paulo Duarte Moratto  | TGTI  | 4A    |
 ## Descrição do Projeto
-Descrever brevemente o objetivo do projeto e como será alcançado. Por exemplo, citar as metodologias utilizadas, linguagens de programação, etc.
+Este projeto tem como finalidade a criação do site da nossa empresa, com todo o conteudo adquirido nos demais semestres da faculdade colocados em pratica, assim temos a descrição do site da empresa. Utilizamos o programa de inicio php storm e depois passamos a utilizar o vs code, não tinhamos conhecimento algum e buscamos adquirindo com estudos, usamos o git hub e um dominio para deixar o site no ar.
 
 ## Endereço da Aplicação
 Informar o endereço IP ou URL da aplicação, conforme exemplo abaixo. É importante lembrar que a máquinas em *Cloud* devem estar "no ar" para que as funcionalidades da aplicação estejam disponíveis. Caso não estejam disponíveis os serviços ou a aplicação não puder ser executada, não háverá como atribuir uma nota.
