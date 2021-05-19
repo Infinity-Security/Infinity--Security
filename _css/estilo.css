@@ -17,7 +17,11 @@ div#interface {
     background-color: #f0eef59a;
     margin: 1em 3px 30px 5px;
     box-shadow: 5px -9px 3px rgba(0,0,0,.5);
-    padding: auto
+    padding: auto;
+    max-width: 1350px;
+    margin: 30px auto;
+
+
 
 }
 
@@ -34,19 +38,18 @@ a:hover{
 
 header#cabecalho img#icone{
     position: absolute;
-    left: 1148px;
-    top: 40px;
+    right: 10px;
+    top: 50px;
 }
 
 
     header#cabecalho img#icone8{
-        position: center;
-        left: 1148px;
-        top: 40px;
+        margin-top: 38px;
 }
 header#cabecalho {
     border-bottom: 1px #606060 solid;
-    height: 150px;
+    height: 195px;
+    position: relative;
     src: url("/meu\ site/fotooo")no-repeat 0px 80px;
 }
 header#cabecalho h1{
